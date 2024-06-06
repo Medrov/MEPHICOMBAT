@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mortalkombatbversion;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,6 +13,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -30,7 +30,7 @@ public class Game {
     private ArrayList<Result> results = new ArrayList<>();
 
     public Player NewEnemy(JLabel L1, JLabel L2,
-            JLabel L3, JLabel L4, JProgressBar pr2) {
+                           JLabel L3, JLabel L4, JProgressBar pr2) {
         action.setEnemyes();
         Player enemy = action.ChooseEnemy(L1, L2, L3, L4);
         action.HP(enemy, pr2);
@@ -77,7 +77,7 @@ public class Game {
     }
 
     public void ReadFromExcel() throws IOException{
-        XSSFWorkbook book = new XSSFWorkbook("C:\\Users\\Мария\\Desktop\\Results.xlsx");
+        XSSFWorkbook book = new XSSFWorkbook("C:\\Users\\mobdevkun\\Desktop\\Results.xlsx");
         XSSFSheet sh = book.getSheetAt(0);
         for (int i=1; i<=sh.getLastRowNum();i++) {
             results.add(new Result(sh.getRow(i).getCell(1).getStringCellValue(),(int)sh.getRow(i).getCell(2).getNumericCellValue()));
