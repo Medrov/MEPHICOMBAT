@@ -1,0 +1,14 @@
+package Fabric;
+
+import Character.LiuKang;
+import Entity.Player;
+
+public class LiuKangFabric implements EnemyFabricInterface {
+
+    @Override
+    public Player create(int i) {
+        Player enemy;
+        enemy = new LiuKang(1, 70, 20, 1);
+        return enemy;
+    }
+}
