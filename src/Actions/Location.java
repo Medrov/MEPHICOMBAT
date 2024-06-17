@@ -29,19 +29,19 @@ public class Location {
             switch (k) {
                 case 0 -> {
                     enemy = fullEnemiesList[0];
-                    enemy.setPhoto("B.jpg");
+                    enemy.setPhoto("karkar.png");
                 }
                 case 1 -> {
                     enemy = fullEnemiesList[1];
-                    enemy.setPhoto("SZ.jpg");
+                    enemy.setPhoto("gambler.png");
                 }
                 case 2 -> {
                     enemy = fullEnemiesList[2];
-                    enemy.setPhoto("LK.jpg");
+                    enemy.setPhoto("genius.png");
                 }
                 case 3 -> {
                     enemy = fullEnemiesList[3];
-                    enemy.setPhoto("SB.jpg");
+                    enemy.setPhoto("gorbatova.png");
                 }
             }
             currentEnemiesList.add(enemy);
@@ -77,7 +77,7 @@ public class Location {
         } else {
             currentEnemyNumber = 0;
             enemy = fullEnemiesList[4];
-            enemy.setPhoto("SK.jpg");
+            enemy.setPhoto("villain.png");
             return enemy;
         }
     }

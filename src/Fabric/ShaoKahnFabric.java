@@ -1,12 +1,12 @@
 package Fabric;
 
-import Character.ShaoKahn;
+import Character.BritishVillain;
 import Entity.Player;
 
 public class ShaoKahnFabric implements EnemyFabricInterface {
 
     @Override
     public Player create(int i) {
-        return new ShaoKahn(3, 100, 30, 1);
+        return new BritishVillain(3, 100, 30, 1);
     }
 }

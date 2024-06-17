@@ -40,7 +40,7 @@ public class JFrames extends javax.swing.JFrame {
         game.writeToTable(recordsTable);
         game.setEnemies();
         game.fight.location.setFullEnemiesList(game.getEnemies());
-        playerIconLabel.setIcon(new ImageIcon("crab.jpg"));
+        playerIconLabel.setIcon(new ImageIcon("khramus.png"));
         attributesGroup.add(healthButton);
         attributesGroup.add(damageButton);
         itemsGroup.add(firstItemButton);
@@ -250,9 +250,9 @@ public class JFrames extends javax.swing.JFrame {
         enemyActionLabel.setForeground(new java.awt.Color(204, 0, 0));
         enemyActionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        playerHeroLabel.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
+        playerHeroLabel.setFont(new java.awt.Font("Tahoma", 2, 16)); // NOI18N
         playerHeroLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        playerHeroLabel.setText("Crab");
+        playerHeroLabel.setText("Храмус");
 
         stunLabel.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         stunLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1054,12 +1054,12 @@ public class JFrames extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panel.setBackground(new java.awt.Color(255, 255, 255));
+        panel.setBackground(new java.awt.Color(0x222222));
 
         mkLabel.setFont(new java.awt.Font("Tahoma", 2, 24)); // NOI18N
         mkLabel.setForeground(new java.awt.Color(204, 204, 0));
         mkLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        mkLabel.setText("Mortal Kombat");
+        mkLabel.setText("Mephi Kombat");
 
         startButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         startButton.setText("Начать новую игру");
