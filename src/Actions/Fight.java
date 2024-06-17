@@ -110,7 +110,7 @@ public class Fight {
             mediator.revive(human, human.getItems());
         }
         if (human.getHealth() <= 0 | enemy.getHealth() <= 0) {
-            if (location.getCurrentLocation() == locationsNumber & "Shao Kahn".equals(enemy.getName())) {
+            if (location.getCurrentLocation() == locationsNumber & "Злодей британец".equals(enemy.getName())) {
                 location.resetLocation(false, 1);
                 endFinalRound(results, enemiesList);
             } else {
@@ -125,7 +125,7 @@ public class Fight {
         if (human.getHealth() > 0) {
             mediator.setRoundEndText("You win");
             mediator.setGIF(true);
-            if ("Shao Kahn".equals(enemy.getName())) {
+            if ("Злодей британец".equals(enemy.getName())) {
                 action.addItems(38, 23, 8, human.getItems());
                 action.addPointsBoss(human);
                 location.resetLocation(true, human.getLevel());

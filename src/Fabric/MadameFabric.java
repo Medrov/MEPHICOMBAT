@@ -3,7 +3,7 @@ package Fabric;
 import Character.Madame;
 import Entity.Player;
 
-public class SonyaBladeFabric implements EnemyFabricInterface {
+public class MadameFabric implements EnemyFabricInterface {
 
     @Override
     public Player create(int i) {

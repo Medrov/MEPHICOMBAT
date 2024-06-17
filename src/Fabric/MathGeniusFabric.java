@@ -1,15 +1,14 @@
 package Fabric;
 
-import Character.Gambler;
+import Character.MathGenius;
 import Entity.Player;
 
-public class SubZeroFabric implements EnemyFabricInterface {
+public class MathGeniusFabric implements EnemyFabricInterface {
 
     @Override
     public Player create(int i) {
         Player enemy;
-        enemy = new Gambler(1, 60, 16, 1);
+        enemy = new MathGenius(1, 70, 20, 1);
         return enemy;
     }
-
 }
