@@ -13,10 +13,10 @@ public class MidGameActions {
 
     public Action chooseEnemyAction(Player enemy, ArrayList<Action> list) {
         switch (enemy.getName()) {
-            case "Sub-Zero" -> {
+            case "Профессиональнй игрок" -> {
                 return list.get((int) (Math.random() * 3));
             }
-            case "Shao Kahn" -> {
+            case "Злодей британец" -> {
                 list.remove(2);
                 return list.get((int) (Math.random() * 3));
             }
@@ -111,27 +111,27 @@ public class MidGameActions {
         for (Player enemy : enemiesList) {
             enemy.setLevel(1);
             switch (enemy.getName()) {
-                case "Sub-Zero" -> {
+                case "Профессиональнй игрок" -> {
                     enemy.setLevel(1);
                     enemy.setDamage(16);
                     enemy.setMaxHealth(60);
                 }
-                case "Sonya Blade" -> {
+                case "Госпожа" -> {
                     enemy.setLevel(1);
                     enemy.setDamage(16);
                     enemy.setMaxHealth(80);
                 }
-                case "Shao Kahn" -> {
+                case "Злодей британец" -> {
                     enemy.setLevel(1);
                     enemy.setDamage(30);
                     enemy.setMaxHealth(100);
                 }
-                case "Liu Kang" -> {
+                case "Гений математики" -> {
                     enemy.setLevel(1);
                     enemy.setDamage(20);
                     enemy.setMaxHealth(70);
                 }
-                case "Baraka" -> {
+                case "Каркарыч" -> {
                     enemy.setLevel(1);
                     enemy.setDamage(12);
                     enemy.setMaxHealth(100);

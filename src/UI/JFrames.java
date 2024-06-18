@@ -150,7 +150,7 @@ public class JFrames extends javax.swing.JFrame {
 
         fightPanel.setBackground(new java.awt.Color(0x222222));
 
-        attackButton.setBackground(new java.awt.Color(0xDC143C));
+        attackButton.setBackground(new java.awt.Color(0xee5256));
         attackButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         attackButton.setText("Атаковать");
         attackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -221,22 +221,22 @@ public class JFrames extends javax.swing.JFrame {
 
         experinceTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
         experinceTitleLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        experinceTitleLabel.setForeground(new java.awt.Color(128, 92, 31));
+        experinceTitleLabel.setForeground(new java.awt.Color(0xF2DD79));
         experinceTitleLabel.setText("experience");
 
         pointsTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
         pointsTitleLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        pointsTitleLabel.setForeground(new java.awt.Color(128, 92, 31));
+        pointsTitleLabel.setForeground(new java.awt.Color(0xF2DD79));
         pointsTitleLabel.setText("points");
 
         experienceValueLabel.setBackground(new java.awt.Color(255, 255, 255));
         experienceValueLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        experienceValueLabel.setForeground(new java.awt.Color(113, 90, 16));
+        experienceValueLabel.setForeground(new java.awt.Color(0xF2DD79));
         experienceValueLabel.setText("0/40");
 
         pointsValueLabel.setBackground(new java.awt.Color(255, 255, 255));
         pointsValueLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        pointsValueLabel.setForeground(new java.awt.Color(113, 90, 16));
+        pointsValueLabel.setForeground(new java.awt.Color(0xF2DD79));
         pointsValueLabel.setText("00");
 
         enemyLevelLabel.setBackground(new java.awt.Color(255, 255, 255));
@@ -246,8 +246,8 @@ public class JFrames extends javax.swing.JFrame {
         turnLabel.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         turnLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        enemyActionLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        enemyActionLabel.setForeground(new java.awt.Color(204, 0, 0));
+        enemyActionLabel.setFont(new java.awt.Font("Tahoma", 3, 15)); // NOI18N
+        enemyActionLabel.setForeground(new java.awt.Color(0xCC00C0));
         enemyActionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         playerHeroLabel.setFont(new java.awt.Font("Tahoma", 2, 16)); // NOI18N
@@ -257,7 +257,7 @@ public class JFrames extends javax.swing.JFrame {
         stunLabel.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         stunLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        itemsButton.setBackground(new java.awt.Color(174, 183, 106));
+        itemsButton.setBackground(new java.awt.Color(0x62a5a5));
         itemsButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         itemsButton.setText("Предметы");
         itemsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -270,11 +270,11 @@ public class JFrames extends javax.swing.JFrame {
 
         enemyNumberLabel.setText("Номер противника:");
 
-        playerActionLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        playerActionLabel.setForeground(new java.awt.Color(204, 0, 0));
+        playerActionLabel.setFont(new java.awt.Font("Tahoma", 3, 15)); // NOI18N
+        playerActionLabel.setForeground(new java.awt.Color(0xCC00C0));
         playerActionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        debuffButton.setBackground(new java.awt.Color(51, 51, 255));
+        debuffButton.setBackground(new java.awt.Color(0x515053));
         debuffButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         debuffButton.setText("Дебаффнуть");
         debuffButton.addActionListener(new java.awt.event.ActionListener() {
@@ -472,15 +472,15 @@ public class JFrames extends javax.swing.JFrame {
                         .addComponent(fightPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        endFightPanel.setBackground(new java.awt.Color(179, 226, 217));
+        endFightPanel.setBackground(new java.awt.Color(0x515053));
 
         endRoundLabel.setBackground(new java.awt.Color(204, 204, 204));
         endRoundLabel.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
-        endRoundLabel.setForeground(new java.awt.Color(204, 0, 0));
+        endRoundLabel.setForeground(new java.awt.Color(0xee5256));
         endRoundLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        endRoundLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        endRoundLabel.setHorizontalTextPosition(javax.swing.SwingConstants  .CENTER);
 
-        nextRoundButton.setBackground(new java.awt.Color(114, 218, 142));
+        nextRoundButton.setBackground(new java.awt.Color(0x62a5a5));
         nextRoundButton.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         nextRoundButton.setText("Дальше");
         nextRoundButton.addActionListener(new java.awt.event.ActionListener() {
@@ -496,13 +496,13 @@ public class JFrames extends javax.swing.JFrame {
                         .addGroup(endFightPanelLayout.createSequentialGroup()
                                 .addGroup(endFightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(endFightPanelLayout.createSequentialGroup()
-                                                .addGap(156, 156, 156)
-                                                .addComponent(GIFLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(24, 24, 24)
+                                                .addComponent(GIFLabel, 400, 600, 900))
                                         .addGroup(endFightPanelLayout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(endRoundLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(endRoundLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(39, 39, 39)
-                                                .addComponent(nextRoundButton, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(nextRoundButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addContainerGap(25, Short.MAX_VALUE))
         );
         endFightPanelLayout.setVerticalGroup(
@@ -538,10 +538,10 @@ public class JFrames extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
-        endGamePanel.setBackground(new java.awt.Color(255, 204, 255));
+        endGamePanel.setBackground(new java.awt.Color(0x9D91FF));
 
         victoryLabel.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        victoryLabel.setForeground(new java.awt.Color(255, 0, 0));
+        victoryLabel.setForeground(new java.awt.Color(0xffffff));
         victoryLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         victoryLabel.setText("Победа на вашей стороне");
 
@@ -554,14 +554,14 @@ public class JFrames extends javax.swing.JFrame {
         });
 
         enterNameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        enterNameLabel.setForeground(new java.awt.Color(102, 102, 102));
+        enterNameLabel.setForeground(new java.awt.Color(0xffffff));
         enterNameLabel.setText("Введите имя своего персонажа для добавления");
 
         enterNameLabelBottom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        enterNameLabelBottom.setForeground(new java.awt.Color(102, 102, 102));
+        enterNameLabelBottom.setForeground(new java.awt.Color(0xffffff));
         enterNameLabelBottom.setText("результата в таблицу рекордов");
 
-        endGameButton.setBackground(new java.awt.Color(153, 153, 255));
+        endGameButton.setBackground(new java.awt.Color(0xFFF091));
         endGameButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         endGameButton.setForeground(new java.awt.Color(51, 51, 51));
         endGameButton.setText("Закончить игру");
@@ -805,7 +805,7 @@ public class JFrames extends javax.swing.JFrame {
         thirdItemButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         thirdItemButton.setText("Крест возрождения, 0 шт");
 
-        useItemButton.setBackground(new java.awt.Color(239, 237, 14));
+        useItemButton.setBackground(new java.awt.Color(0x62a5a5));
         useItemButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         useItemButton.setText("Использовать");
         useItemButton.addActionListener(new java.awt.event.ActionListener() {

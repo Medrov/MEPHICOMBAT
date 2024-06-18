@@ -192,10 +192,10 @@ public class Mediator {
     }
     public void setGIF(boolean a){
         if (a){
-            GIFLabel.setIcon(new ImageIcon("Tanets_Kosti_Voronina_avi_1.gif"));
+            GIFLabel.setIcon(new ImageIcon("win.gif"));
         }
         else{
-            GIFLabel.setIcon(new ImageIcon("uvy.gif"));
+            GIFLabel.setIcon(new ImageIcon("death.gif"));
         }
     }
 }

@@ -123,7 +123,7 @@ public class Fight {
         MidGameActions action = new MidGameActions();
         mediator.setEndFightDialog();
         if (human.getHealth() > 0) {
-            mediator.setRoundEndText("You win");
+            mediator.setRoundEndText("Ты молодец");
             mediator.setGIF(true);
             if ("Злодей британец".equals(enemy.getName())) {
                 action.addItems(38, 23, 8, human.getItems());
@@ -135,7 +135,7 @@ public class Fight {
             }
         } else {
             reset(enemiesList);
-            mediator.setRoundEndText(enemy.getName() + " win");
+            mediator.setRoundEndText("Ты лошок");
             mediator.setGIF(false);
 
         }
