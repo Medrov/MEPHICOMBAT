@@ -11,20 +11,10 @@ public class Hit extends Action {
 
     @Override
     public void realisation(Player human, Player enemy, String enemyActionType) {
+        int damage = calculateDamage(human, enemy);
         switch (enemyActionType) {
             case "Hit" -> {
-                if (enemy.isDebuffed() & human.isDebuffed()){
-                    enemy.addHealth((int) (-human.getDamage()*1.25/2));
-                }
-                if (enemy.isDebuffed() & !human.isDebuffed()){
-                    enemy.addHealth((int) (-human.getDamage()*1.25));
-                }
-                if (!enemy.isDebuffed() & human.isDebuffed()){
-                    enemy.addHealth((int) (-human.getDamage()/2));
-                }
-                if (!enemy.isDebuffed() & !human.isDebuffed()){
-                    enemy.addHealth((int) (-human.getDamage()));
-                }
+                enemy.addHealth(-damage);
             }
             case "Block" -> {
                 if (Math.random() < 0.5) {
@@ -38,5 +28,19 @@ public class Hit extends Action {
                 enemy.addHealth(-human.getDamage()*2);
             }
         }
+    }
+
+    private int calculateDamage(Player human, Player enemy){
+        int damage = human.getDamage();
+        if (enemy.isDebuffed() && human.isDebuffed()) {
+            damage = (int) (damage * 1.25 / 2);
+        }
+        else if (enemy.isDebuffed() &&!human.isDebuffed()) {
+            damage = (int) (damage * 1.25);
+        }
+        else if (!enemy.isDebuffed() && human.isDebuffed()) {
+            damage = damage / 2;
+        }
+        return damage;
     }
 }

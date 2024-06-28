@@ -12,14 +12,10 @@ public class Heal extends Action {
     @Override
     public void realisation(Player human, Player enemy, String enemyActionType) {
         switch (enemyActionType) {
-            case "Hit" -> {
+            case "Hit", "Heal", "Debuff" -> {
             }
-            case "Block" -> {
-                human.addHealth((human.getMaxHealth() - human.getHealth()) / 2);
-            }
-            case "Debuff" -> {
-            }
-            case "Heal" -> {
+            case "Block" ->{
+                human.addHealth((human.getMaxHealth() - human.getHealth())/2);
             }
         }
     }

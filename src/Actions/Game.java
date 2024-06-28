@@ -16,7 +16,7 @@ import java.util.Comparator;
 
 public class Game {
 
-    public MidGameActions action = new MidGameActions();
+    public GameLogic action = new GameLogic();
     public Fight fight = new Fight();
     private final ArrayList<Result> results = new ArrayList<>();
     private final Player enemies[] = new Player[5];

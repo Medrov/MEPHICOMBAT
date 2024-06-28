@@ -66,11 +66,10 @@ public class Fight {
             mediator.setDebuffLabel(enemy, true);
             human.loseDebuffTurn();
         }
-
     }
 
     public void hit(int a, ArrayList<Result> results, int locationsNumber, Player[] enemiesList) {
-        MidGameActions action = new MidGameActions();
+        GameLogic action = new GameLogic();
         Action enemyAction = action.chooseEnemyAction(enemy, new ArrayList<>(actionsList));
         switch (a) {
             case 0 -> {
@@ -79,6 +78,9 @@ public class Fight {
                 if (enemy.getHealth() > 0) {
                     enemyMove(actionsList.get(1), enemyAction);
                 }
+                if (human.getHealth() <= 0) {
+                    mediator.gameEnding("Ты проиграл!", true);
+                }
             }
             case 1 -> {
                 playerMove(enemyAction, actionsList.get(0));
@@ -86,12 +88,18 @@ public class Fight {
                     enemyMove(actionsList.get(0),
                             enemyAction);
                 }
+                if (human.getHealth() <= 0) {
+                    mediator.gameEnding("Ты проиграл!", true);
+                }
             }
             case 2 -> {
                 playerMove(enemyAction, actionsList.get(2));
                 if (enemy.getHealth() > 0) {
                     enemyMove(actionsList.get(2),
                             enemyAction);
+                }
+                if (human.getHealth() <= 0) {
+                    mediator.gameEnding("Ты проиграл!", true);
                 }
             }
         }
@@ -120,8 +128,9 @@ public class Fight {
     }
 
     public void endRound(Player[] enemiesList) {
-        MidGameActions action = new MidGameActions();
+        GameLogic action = new GameLogic();
         mediator.setEndFightDialog();
+
         if (human.getHealth() > 0) {
             mediator.setRoundEndText("Ты молодец");
             mediator.setGIF(true);
@@ -135,14 +144,13 @@ public class Fight {
             }
         } else {
             reset(enemiesList);
-            mediator.setRoundEndText("Ты лошок");
+            mediator.setRoundEndText("Ты проиграл");
             mediator.setGIF(false);
-
         }
     }
 
     public void reset(Player[] enemiesList) {
-        MidGameActions action = new MidGameActions();
+        GameLogic action = new GameLogic();
         human.setDamage(16);
         human.setHealth(80);
         human.setMaxHealth(80);
@@ -156,7 +164,7 @@ public class Fight {
     }
 
     public void endFinalRound(ArrayList<Result> results, Player[] enemiesList ) {
-        MidGameActions action = new MidGameActions();
+        GameLogic action = new GameLogic();
         action.resetEnemies(enemiesList);
         String text = "Победа не на вашей стороне";
         if (human.getHealth() > 0) {
